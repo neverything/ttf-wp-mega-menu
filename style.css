@@ -1,0 +1,59 @@
+/*
+Theme Name: WP Mega Menu
+Theme URI: https://github.com/neverything/wp-mega-menu
+Author: Silvan Hagen
+Author URI: https://silvanhagen.com/writing/wordpress-mega-menu-blocks/?ref=wp-mega-menu-theme
+Description: A Twenty Twenty Four child theme with a mega menu using GenerateBlocks Pro Accordion blocks. Includes a navigation overlay with backdrop filter and additional styles for the Site and Block editor.
+Requires at least: 6.0
+Tested up to: 6.5
+Requires PHP: 5.7
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Template: twentytwentyfour
+Text Domain: wp-mega-menu
+Tags: mega-menu, menu, navigation, navigation menu, generateblocks
+*/
+
+.navigation-overlay {
+    position: fixed;
+    top: 150px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: calc(100dvh - 150px);
+    max-width: 100% !important;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding-left: calc(50dvw - 600px);
+    padding-right: calc(50dvw - 600px);
+    z-index: 2;
+}
+
+.navigation-overlay > div {
+    box-shadow: rgba(0, 0, 0, 0.2) 0 8px 24px;
+}
+
+/**
+  * Additional styles for the Site and Block editor
+ */
+.is-root-container .gb-accordion__item:not(.has-child-selected) > .gb-container:not(.gb-accordion__toggle) {
+    display: none;
+}
+
+.is-root-container .gb-accordion__item.has-child-selected > .gb-container:not(.gb-accordion__toggle) {
+    display: block;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.editor-styles-wrapper .is-root-container .navigation-overlay {
+    top: 50px !important;
+}
+
+.editor-styles-wrapper .navigation-overlay > div {
+    max-width: none;
+    left: 50%;
+    top: 50px;
+    translate: -50%;
+}
