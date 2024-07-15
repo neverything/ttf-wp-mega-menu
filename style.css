@@ -1,6 +1,6 @@
 /*
 Theme Name: WP Mega Menu
-Theme URI: https://github.com/neverything/wp-mega-menu
+Theme URI: https://github.com/neverything/ttf-wp-mega-menu
 Author: Silvan Hagen
 Author URI: https://silvanhagen.com/writing/wordpress-mega-menu-blocks/?ref=wp-mega-menu-theme
 Description: A Twenty Twenty Four child theme with a mega menu using GenerateBlocks Pro Accordion blocks. Includes a navigation overlay with backdrop filter and additional styles for the Site and Block editor.
@@ -14,7 +14,6 @@ Template: twentytwentyfour
 Text Domain: wp-mega-menu
 Tags: mega-menu, menu, navigation, navigation menu, generateblocks
 */
-
 .navigation-overlay {
     position: fixed;
     top: 150px;
